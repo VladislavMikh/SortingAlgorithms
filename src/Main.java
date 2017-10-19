@@ -24,7 +24,7 @@ public class Main {
         // Подсчётом
         int[] mas4 = {7, 3, 5, 5, 0, 2, 8, 5, 1 ,0};
         System.out.print("   Подсчётом: " + Arrays.toString(mas4) + " --> ");
-        Stable.sort(mas4);
+        Stable.countingSort(mas4);
         System.out.println(Arrays.toString(mas4));
         //System.out.println(Arrays.toString(Stable.sort(mas4)));
 

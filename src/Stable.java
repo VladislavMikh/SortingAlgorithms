@@ -75,7 +75,7 @@ public class Stable {
     }
 
     // Подсчетом 4
-     static void sort(int[] array) {
+     static void countingSort(int[] array) {
 
         if (array.length == 0) return;
         int min = array[0];
