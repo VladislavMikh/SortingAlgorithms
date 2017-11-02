@@ -23,19 +23,21 @@ public class Main {
 
         // Подсчётом
         int[] mas4 = {7, 3, 5, 5, 0, 2, 8, 5, 1 ,0};
-        System.out.print("   Подсчётом: " + Arrays.toString(mas4) + " --> ");
+        System.out.print(" + Подсчётом: " + Arrays.toString(mas4) + " --> ");
         Stable.countingSort(mas4);
         System.out.println(Arrays.toString(mas4));
         //System.out.println(Arrays.toString(Stable.sort(mas4)));
 
         // Кучей
-        int[] mas5 = {11, 10, 14, 6, 2, 8};
-        //int n = array.lenght;
-        System.out.print("Кучей НЕ ДОДЕЛАНО: ");
-        Unstable.print(mas5);
+        int[] mas5 = {11, 10, 14, -6, -7, 2, 8};
+        System.out.print("   Кучей: " + Arrays.toString(mas5) + " --> ");
+        Unstable.heapSort(mas5);
+        System.out.println(Arrays.toString(mas5));
 
-        // Быстрая
-        System.out.println("Быструю СДЕЛАТЬ");
-
+        // Быстрая (Хоара)
+        int[] mas6 = {0, 4, 2, 1, -1, -2, 3, 2, 0};
+        System.out.print("   Быстрая: " + Arrays.toString(mas6) + " --> ");
+        Unstable.quickSort(mas6);
+        System.out.println(Arrays.toString(mas6));
     }
 }
